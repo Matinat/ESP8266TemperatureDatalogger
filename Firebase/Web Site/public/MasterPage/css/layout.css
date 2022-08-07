@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.scroll {
+    /* white-space: nowrap; */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#sidenavgeneral {
+    /*font-size: 110%;*/
+    font-weight: bolder;
+    /*padding-top: 2px;
+    padding-bottom: 2px;*/
+}
+
+.generalsidenavitem {
+    font-size: 1222pt;
+}
+
+.brandlogoimage {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+
+.breadcrumb {
+    background-color: #d8d8dc;
+    font-weight: bold;
+    font-size: 1.4vh;
+}
+
+.falayout {
+    padding-right: 8px;
+}
+
+.bodytotal {
+    background: #fafafa;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.separadorlayout {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 20px;
+    color: #999;
+    padding: 0px;
+    padding-top: 5px;
+    margin: 0px;
+    border-bottom: 1px solid rgba(84, 155, 207, 0.5);
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.row {
+    margin-left: 3px;
+}
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    z-index: 1;
+    border-radius: 0;
+    background: #043868;
+    -webkit-box-shadow: 0px 1px 7px 3px rgba(0,13,58,0.6);
+    -moz-box-shadow: 0px 1px 7px 3px rgba(0,13,58,0.6);
+    box-shadow: 0px 1px 7px 3px rgba(0,13,58,0.6);
+    border-color: #043868;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar-header {
+    display: inline-block !important;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+#sidebarCollapse {
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    color: white;
+}
+
+#layoutstyle {
+    z-index: 100000;
+}
+
+/*.separadorlayout {
+}*/
+
+/* ---------------------------------------------------
+                   SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar .fa {
+    padding: 5px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    height: 100%;
+    z-index: 9999;
+    background: linear-gradient( #003363, #00294f );
+    color: #fff;
+    transition: all 0.3s;
+    overflow: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    font-family: Montserrat, sans-serif;
+}
+
+    #sidebar.active {
+        left: 0;
+    }
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+    #dismiss:hover {
+        background: #fff;
+        color: #003363;
+    }
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 51, 99, 1)), color-stop(100%, rgba(255,255,255,0)));
+    z-index: 500;
+    display: none;
+}
+
+#sidebar .sidebar-header {
+    padding-bottom: 5px;
+    background: #053969;
+    padding-left: 10px;
+}
+
+#sidebar ul.components {
+    padding: 5px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 7px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 1.1em;
+    display: block;
+}
+
+    #sidebar ul li a:hover {
+        color: #003363;
+        background: #fff;
+    }
+
+#sidebar ul li.active > a, #sidebar a[aria-expanded="true"] {
+    color: #fff;
+    background: rgba(4, 50, 89, 0.54);
+}
+
+
+#sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar a[aria-expanded="false"]::before, #sidebar a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+
+#sidebar a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 28px !important;
+    background: rgba(0, 51, 99, 0.4);
+}
+
+ul.CTAs {
+    padding: 10px;
+}
+
+    ul.CTAs a {
+        text-align: center;
+        font-size: 0.9em !important;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+a.download {
+    background: #fff;
+    color: #003363;
+}
+
+a.article, a.article:hover {
+    background: #003363 !important;
+    color: #fff !important;
+}
+
+#padd {
+    padding-top: 0px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+.contentenidolayout {
+    width: 100%;
+    padding-top: 70px;
+    padding-right: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pointsize {
+    font-size: 12px;
+}
+
+
+.rotate {
+    -moz-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+    .rotate.down {
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+::-webkit-scrollbar {
+    width: 6px;
+    height:6px;
+    border-radius: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;        
+        border-radius: 20px;
+        }

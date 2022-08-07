@@ -1,0 +1,101 @@
+﻿.dropdownbuttonmenu {
+    position: absolute;
+}
+
+    .dropdownbuttonmenu button {
+        outline: 0;
+        display: inline;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #043868;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 10px 10px;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    .dropdownbuttonmenu button span{
+        vertical-align:super;
+    }
+
+        .dropdownbuttonmenu button:focus .dropdown, .dropdownbuttonmenu button:active .dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dropdownbuttonmenu button ul {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s ease;
+            padding: 0 !important;
+            list-style-type: none !important;
+        }
+
+            .dropdownbuttonmenu button ul:before {
+                content: '';
+                position: absolute;
+                top: -6px;
+                right: 17px;
+                width: 0;
+                height: 0;
+                box-shadow: 2px -2px 6px rgba(0, 0, 0, 0.05);
+                border-top: 6px solid #FFFFFF;
+                border-right: 6px solid #FFFFFF;
+                border-bottom: 6px solid transparent;
+                border-left: 6px solid transparent;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                mix-blend-mode: multiple;
+            }
+
+            .dropdownbuttonmenu button ul li {
+                z-index: 1;
+                position: relative;
+                background: #FFFFFF;
+                padding: 0 20px;
+                color: #666;
+            }
+
+            .dropdownbuttonmenu button ul li:hover {
+                background-color: #003363;
+                color: white;
+            }
+                .dropdownbuttonmenu button ul li.active {
+                    color: #5380F7;
+                }
+
+                .dropdownbuttonmenu button ul li:first-child {
+                    border-radius: 4px 4px 0 0;
+                }
+
+                .dropdownbuttonmenu button ul li:last-child {
+                    border-radius: 0 0 4px 4px;
+                }
+
+                    .dropdownbuttonmenu button ul li:last-child a {
+                        border-bottom: 0;
+                    }
+
+            .dropdownbuttonmenu button ul a {
+                display: block;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                padding: 16px 0;
+                color: inherit;
+                font-size: 10px;
+                text-decoration: none;
+            }

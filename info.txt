@@ -1,0 +1,17 @@
+Please, check your firebase storage and functions usage regularly because you can reach the limit and have to pay for it.
+
+Fill data in Web Site/public/Controllers/FirebaseController{
+	apiKey: "YOUR_FIREBASE_API_KEY",
+	authDomain: "YOUR_FIREBASE_DOMAIN",
+	databaseURL: "YOUR_FIREBASE_DATABSE_URL",
+	projectId: "YOUR_FIREBASE_PROJECT_ID",
+	storageBucket: "YOUR_FIREBASE_STORAGE_BUCKET",
+	messagingSenderId: "YOUR_FIREBASE_SENDER_ID",
+	appId: "YOUR_FIREBASE_APP_ID"
+}
+
+https://www.buymeacoffee.com/matiasnatal?new=1
+
+
+librerias:
+

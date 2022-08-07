@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/historicalvalues.css" rel="stylesheet" />
+   
+    <link href="./../Lib/visuals/loadingpanel/loadingpanel.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/css/bootstrap-select.min.css" rel="stylesheet" />
+	<link href="./../MasterPage/css/fonts.googleapis.css" type="text/css" rel="stylesheet" />
+    <link href="./../MasterPage/css/all.min.css" rel="stylesheet" />
+    <link href="./../MasterPage/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="./../MasterPage/css/layout.css" type="text/css" rel="stylesheet" />
+    <link href="./../MasterPage/css/dropdownbuttonmenu.css" type="text/css" rel="stylesheet" />
+	
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body >   
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title panelhead">Filters
+                        </h3>
+                    </div>
+                    <div class="panel-body backgroundcard">
+                        
+                        <div class="selectbox">
+                            <div class="selectvalue">
+                                Parameter : 
+                            </div>
+                            <select class="selectpicker" data-live-search="true" id="cbxparms">
+                                <option selected disabled hidden style='display: none' value=''></option>
+                            </select>
+                        </div>
+                        <div class="selectbox">
+                            <a href="#" class="btn btn-success addtravel" id="btnaddline" data-toggle="XX" data-target="XX">
+                                <span class="glyphicon glyphicon-plus paddingicon"></span>Add
+                            </a>
+                        </div>
+                        <div class="selectbox">
+                            <div class="selectvalue">
+                                From : 
+                            </div>
+                            <input id="inputfrom" type="date" required="required">
+                        </div>
+                        <div class="selectbox">
+                            <div class="selectvalue">
+                                To : 
+                            </div>
+                            <input id="inputto" type="date" name="To" required="required">
+                        </div>
+                        <div class="selectbox">
+                            <a href="#" class="btn btn-success addtravel" id="btnfilterdate" data-toggle="XX" data-target="XX">
+                                <span class="glyphicon glyphicon-filter "></span>Filter         
+                            </a>
+                        </div>
+                        <div class="selectbox">
+                            <a href="#" class="btn btn-success addtravel" id="btnexport" data-toggle="XX" data-target="XX">
+                                <span class="glyphicon glyphicon-download-alt"></span>
+                                Export         
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <canvas id="historicalchart" width="1500" height="650"></canvas>
+                </div>
+            </div>
+        </div>
+		<footer syle='font-family:"Helvetica Neue LT Std"'>
+			<a href="https://github.com/Matinat" style='color=gray'>Author: Matias Natal</a>
+			</br>
+			<a style='color=gray' href="https://www.buymeacoffee.com/matiasnatal">Buy me a coffee</a>
+		</footer>
+    </div>
+	<script src="./../Assets/jquery/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="./../Lib/visuals/inputs/simpleinput/SimpleInput.js"></script>
+    <script src="./../Lib/visuals/dialogs/DialogForm.js"></script>
+	<script src="../Shared/Utilities/DateUtilities.js"></script>
+    <script src="./../Lib/utilities/RegionalUtilities.js"></script>
+    <script src="./../Lib/utilities/NumberUtilities.js"></script>
+    <script src="./../Lib/utilities/DateUtilities.js"></script>
+	
+	<script src="./../Assets/firebase/firebase-app.js" type="module"></script>
+	<script src="./../Assets/firebase/firebase-database.js" type="module"></script>
+	<script src="./../Assets/firebase/firebase-auth.js" type="module"></script>
+	
+	
+	<script src="./../Controllers/FirebaseController/firebase.js" type="module"></script>
+    <script src="./../Controllers/ParameterController/ParameterController.js" type="module"></script>
+	
+    <script src="./../Lib/visuals/loadingpanel/LoadingPanel.js"></script>
+    <script src="./../Assets/momentjs/moment.js"></script>
+    <script src="./../Assets/chartcomponents/Chart.bundle.min.js"></script>
+    <script src="./../Assets/bootstrap/bootstrap-select.js"></script>
+	<script src="./../Assets/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/HistoricalDataset.js"></script>
+
+    <script src="../Shared/Components/Charts/LineChartXY/LineChartXY.js"></script> 
+    <script src="js/ParameterDeviceOption.js"></script>
+    <script src="js/DeviceOption.js"></script>
+    <script src="js/PDHistoricalValue.js"></script>
+    <script src="js/HistoricalPicture.js" type="module"></script>
+</body>
+</html>
