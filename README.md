@@ -1,6 +1,6 @@
 # Firebase Temperature data logger | ESP8266 Wifi thermometer
 
-If you liked the project, please buy me a coffee: [Buy me a coffee](https://www.buymeacoffee.com/matiasnatal)
+If you liked the project, please buy me a coffee: [Buy me a coffee](https://www.buymeacoffee.com/whatabot)
 
 External Libraries used in this project:
 [Firebase ESP8266](https://github.com/mobizt/Firebase-ESP8266)
@@ -51,5 +51,5 @@ Wire and ESP8266WiFi
 
 
 
-If you liked the project, please buy me a coffee: [Buy me a coffee](https://www.buymeacoffee.com/matiasnatal)
+If you liked the project, please buy me a coffee: [Buy me a coffee](https://www.buymeacoffee.com/whatabot)
 
